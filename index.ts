@@ -102,7 +102,7 @@ const server = Bun.serve({
           isSuccess: true,
           otaOrderStatus: MeituanOrderStatusCode.PARTIAL_CANCEL_SUCCESS,
         });
-      case "/queryOrder":
+      case "/queryConfirm":
         return Response.json({
           msg: "已确认",
           code: 200,
@@ -111,7 +111,7 @@ const server = Bun.serve({
           isSuccess: true,
           otaOrderStatus: MeituanOrderStatusCode.CONFIRM_SUCCESS,
         });
-      case "/queryConsumeOrder":
+      case "/queryConsume":
         return Response.json({
           msg: "成功",
           code: 200,
